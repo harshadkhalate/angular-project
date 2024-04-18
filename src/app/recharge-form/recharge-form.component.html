@@ -1,0 +1,31 @@
+<div class="centered-box">
+  <div class="recharge-form">
+    <h2>Recharge Now</h2>
+    <div *ngIf="selectedPlan">
+      <h5>Plan: {{ selectedPlan.name }}</h5>
+      <h5>Price: {{selectedPlan.price}}</h5>
+    </div>
+    <form (ngSubmit)="submitRechargeForm()">
+      <label for="subscribe_name"><h5>Subscriber Name:</h5></label>
+      <input type="text" id="subscribe_name" name="subscribe_name" [(ngModel)]="subscribe_name" required>
+      
+      <label for="paymentMethod"><h5>Payment Method:</h5></label>
+      <select type="text" id="paymentMethod" name="paymentMethod" [(ngModel)]="paymentMethod" required>
+        <option value="" disabled selected>Select payment method</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="PayPal">UPI</option>
+        <option value="Bank">Bank</option>
+        <!-- Add more payment options as needed -->
+      </select>
+      <br><br>
+      <button type="submit"><h4>Pay {{selectedPlan.price}}</h4></button>
+    </form>
+
+    <div *ngIf="rechargeSuccess" class="success-message">
+      Recharge successful!
+    </div>
+  </div>
+</div>
+
+  

@@ -1,0 +1,103 @@
+<div class="plans-container">
+  <h2>Popular Plans</h2>
+  <table class="plans-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Is Unlimited</th>
+        <th>Validity</th>
+        <th>Data (GB)</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let plan of popularPlans">
+        <td>{{ plan.name }}</td>
+        <td>{{ plan.price }}</td>
+        <td>{{ plan.isUnlimited ? 'Yes' : 'No' }}</td>
+        <td>{{ plan.validity }}</td>
+        <td>{{ plan.data }}</td>
+        <td><button (click)="openRechargeForm(plan)">Recharge Now</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="plans-container">
+  <h2>Validity Plans</h2>
+  <table class="plans-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Is Unlimited</th>
+        <th>Validity</th>
+        <th>Data (GB)</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let plan of validityPlans">
+        <td>{{ plan.name }}</td>
+        <td>{{ plan.price }}</td>
+        <td>{{ plan.isUnlimited ? 'Yes' : 'No' }}</td>
+        <td>{{ plan.validity }}</td>
+        <td>{{ plan.data }}</td>
+        <td><button (click)="openRechargeForm(plan)">Recharge Now</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="plans-container">
+  <h2>Data Plans</h2>
+  <table class="plans-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Is Unlimited</th>
+        <th>Validity</th>
+        <th>Data (GB)</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let plan of dataPlans">
+        <td>{{ plan.name }}</td>
+        <td>{{ plan.price }}</td>
+        <td>{{ plan.isUnlimited ? 'Yes' : 'No' }}</td>
+        <td>{{ plan.validity }}</td>
+        <td>{{ plan.data }}</td>
+        <td><button (click)="openRechargeForm(plan)">Recharge Now</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="plans-container">
+  <h2>Unlimited Data Plans</h2>
+  <table class="plans-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Is Unlimited</th>
+        <th>Validity</th>
+        <th>Data (GB)</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let plan of unlimitedDataPlans">
+        <td>{{ plan.name }}</td>
+        <td>{{ plan.price }}</td>
+        <td>{{ plan.isUnlimited ? 'Yes' : 'No' }}</td>
+        <td>{{ plan.validity }}</td>
+        <td>{{ plan.data }}</td>
+        <td><button (click)="openRechargeForm(plan)">Recharge Now</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

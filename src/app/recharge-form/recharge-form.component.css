@@ -1,0 +1,41 @@
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set full viewport height */
+  }
+  
+  .recharge-form {
+    max-width: 400px; /* Adjust as needed */
+    padding: 20px;
+    border: 1px solid #6c3636;
+    border-radius: 5px;
+    background-color: #d6c4c4;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 600px) {
+    .recharge-form {
+      width: 90%; /* Adjust as needed for smaller screens */
+    }
+  }
+
+  h3 {
+    font-weight: normal; /* or font-weight: 400; */
+  }
+  
+
+  .centered-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    
+    width: 90%; /* Adjust as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  

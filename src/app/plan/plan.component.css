@@ -1,0 +1,30 @@
+/* CSS for plan component */
+
+.plans-container {
+  text-align: center; /* Center the content */
+  margin-bottom: 20px; /* Add some space between containers */
+}
+
+.plans-table {
+  width: 100%; /* Take up full width of container */
+  border-collapse: collapse; /* Collapse table borders */
+  margin: 0 auto; /* Center the table horizontally */
+  max-width: 800px; /* Limit maximum width */
+}
+
+.plans-table th, .plans-table td {
+  border: 1px solid #ddd; /* Add border to cells */
+  padding: 8px; /* Add padding to cells */
+}
+
+.plans-table th {
+  background-color: #f2f2f2; /* Background color for header */
+}
+
+.plans-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row color */
+}
+
+.plans-table tr:hover {
+  background-color: #ddd; /* Hover color */
+}
